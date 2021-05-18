@@ -1,5 +1,8 @@
 # Introduction
 
+NOTE: This is a clone of the original org-drill, modified to fix dead links, clarify documentation and get rid of bugs. I'm not going to be adding any features
+to org-drill, it's a built product and doesn't need anything more, only fixing bugs that arise with updating Emacs/org-mode.
+
 Org-Drill is an extension for [Org mode](http://orgmode.org/). Org-Drill uses a [spaced repetition](http://en.wikipedia.org/wiki/Spaced_repetition)
 algorithm to conduct interactive "drill sessions", using org files as sources
 of facts to be memorised. Each topic is treated as a "flash card". The material
@@ -21,23 +24,17 @@ that use it, see:
 -   [Anki](http://ichi2.net/anki/)
 -   [Mnemosyne](http://mnemosyne-proj.org/index.php)
 
-Org-Drill comes bundled with Org mode, in the "contrib" directory. Org-Drill
-also has its own repository, which is updated more regularly than the bundled
-version. The repository is at:
+Org-Drill no longer comes bundled with Org mode in the "contrib" directory. Org-Drill
+also has its own repository. The repository is at:
 
-<http://bitbucket.org/eeeickythump/org-drill>
+<https://github.com/kryptbits/org-drill/>
 
 # Installation
 
-The easiest way is to customise the variable `org-modules` (`M-x
-customize-variables RET org-modules`) and make sure 'drill' is
-ticked. Org-drill will then be loaded when you restart Emacs or restart
-Org-mode.
-
-For manual installation, put the following in your `.emacs`. You will also need
-to make sure that Org's "contrib/lisp" directory is in the emacs load-path.
-
-    (require 'org-drill)
+1. Clone the repository
+2. Add the following to your Emacs init file:
+	(add-to-list "<PLACE-YOU-CLONED-ORG-DRILL>")
+	(require 'org-drill)
 
 # Demonstration
 
@@ -947,4 +944,4 @@ or give it different tags or properties, for example.
 
 # Author
 
-Org-Drill is written by Paul Sexton.
+Org-Drill is written by Paul Sexton. This forked is maintained by kryptbits.
